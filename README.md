@@ -1,46 +1,22 @@
-# Getting Started with Create React App
+# kirillsaint визитка
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+очень сексуальная визитка на реакте с говнокодом, проектами и донатом.
 
-## Available Scripts
+[kirillsaint.pw](https://kirillsaint.pw)
 
-In the project directory, you can run:
+# запуск
 
-### `npm start`
+надеюсь, вы умеете запускать реакт приложения, если нет **идите нахуй**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+> для умных: [create-react-app](https://create-react-app.dev/docs/getting-started/)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# FAQ
 
-### `npm test`
+| Вопрос                                           | Ответ                                                                                                                                                                                                                                                                                                                                                                                   |
+| ------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Поможешь?                                        | Нет                                                                                                                                                                                                                                                                                                                                                                                     |
+| Как сменить имя?                                 | В файле <span style="color:#00FF0A">src/pages/Main.tsx</span>, а так же заменить заголовки страниц на всех страницах во всех файлах в папке <span style="color:#00FF0A">src/pages</span> на строчке со строкой <span style="color:#00FF0A">document.title = "kirillsaint/{название странички}"</span> (да я не использую реакт хелмет, потому что походу он не работает с тайпскриптом) |
+| Как сменить аватарку?                            | Она привязана к Телеграм аккаунту. Укажите свой юзернейм в файле <span style='color:#00FF0A'>src/components/Header/Ava.tsx</span> на строке <span style='color:#00FF0A'>8</span> вместо <span style='color:#00FF0A'>kirillsaint</span> укажите свой юзернейм (БЕЗ @)                                                                                                                    |
+| Как получать сообщения с формы "Предложить идею" | Нужно создать бота в Телеграм через <span style='color:#00FF0A'>@BotFather</span>, написать ему любой текст, скопировать токен и вставить его в переменную **bot_token** в файле <span style="color:#00FF0A">src/pages/Projects.tsx</span>, потом скопировать свой **ID** аккаунта (телеграма) и вставить его в переменную **user_id** в том же файле.                                  |
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+### спасибо за внимание, до свидания
