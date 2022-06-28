@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Heading, Stack, Center } from "@chakra-ui/react";
+import { Box, Heading, Stack } from "@chakra-ui/react";
 
 function NotFound() {
 	React.useEffect(() => {
