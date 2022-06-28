@@ -73,6 +73,21 @@ function Projects() {
 				return;
 			}
 
+			if (username[0] !== "@") {
+				setErrorUsername("Юзернейм должен начинаться с @");
+				return;
+			}
+
+			let fullUsername: string = username.replace("@", "");
+
+			if (
+				!/^[A-Za-z][A-Za-z0-9]*$/.test(fullUsername) ||
+				fullUsername.length <= 4
+			) {
+				setErrorUsername("Укажите юзернейм!");
+				return;
+			}
+
 			if (
 				message.toLowerCase() === "кирилл, отсоси мой хуй" ||
 				username.toLowerCase() === "@kirillsaint" ||
