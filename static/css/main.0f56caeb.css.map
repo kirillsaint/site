@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.0f56caeb.css","mappings":"AAAA,WACC,mBAAsB,CACtB,uDACD,CAEA,WACC,mBAAsB,CACtB,uDACD","sources":["css/theme.css"],"sourcesContent":["@font-face {\n\tfont-family: \"Heading\";\n\tsrc: url(\"../fonts/heading.otf\");\n}\n\n@font-face {\n\tfont-family: \"Regular\";\n\tsrc: url(\"../fonts/regular.otf\");\n}\n"],"names":[],"sourceRoot":""}

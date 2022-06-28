@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0f56caeb.css",
+    "main.js": "/static/js/main.ad7b6057.js",
+    "static/js/787.dc7104b2.chunk.js": "/static/js/787.dc7104b2.chunk.js",
+    "static/media/regular.otf": "/static/media/regular.9603d48be34f3721c9c6.otf",
+    "static/media/heading.otf": "/static/media/heading.e7dbff6869476c4643de.otf",
+    "static/media/sberzvuk.svg": "/static/media/sberzvuk.9b1057952f7291b3d346eac5438a52eb.svg",
+    "static/media/close.svg": "/static/media/close.b2700b0dddaf6ea0b030b70bef9c4823.svg",
+    "static/media/qiwi.svg": "/static/media/qiwi.cbcf44f139606486582c5dd999580c2d.svg",
+    "static/media/da.svg": "/static/media/da.c3bdcb1267ccbf717d25cda36fd32276.svg",
+    "static/media/tg.svg": "/static/media/tg.2b36ee1d6f19d49d1bd296d885a8ccd4.svg",
+    "static/media/gh.svg": "/static/media/gh.abc9e078d3453bef8dea9afcf914c963.svg",
+    "index.html": "/index.html",
+    "static/media/vk.svg": "/static/media/vk.a7458f6331b4ad309a86594a8bbc0ba7.svg",
+    "static/media/yoomoney.svg": "/static/media/yoomoney.c2842d71f0ff86632dba69a8ca1b38a7.svg",
+    "main.0f56caeb.css.map": "/static/css/main.0f56caeb.css.map",
+    "main.ad7b6057.js.map": "/static/js/main.ad7b6057.js.map",
+    "787.dc7104b2.chunk.js.map": "/static/js/787.dc7104b2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0f56caeb.css",
+    "static/js/main.ad7b6057.js"
+  ]
+}
