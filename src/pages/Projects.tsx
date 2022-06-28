@@ -20,6 +20,7 @@ import {
 	Input,
 	Textarea,
 	useToast,
+	SimpleGrid,
 } from "@chakra-ui/react";
 import LazyImage from "../components/LazyImage";
 import sberzvuk from "../images/sberzvuk.svg";
@@ -179,11 +180,11 @@ function Projects() {
 						проекты
 					</Heading>
 					<Center>
-						<Stack
+						<SimpleGrid
 							paddingTop={5}
 							paddingBottom={5}
 							w="100%"
-							direction="column"
+							columns={[1, 2, 3]}
 							spacing={["10px", "25px"]}
 						>
 							<Center>
@@ -201,7 +202,7 @@ function Projects() {
 							<Center>
 								<Card title="exteraWeb" link="https://web.extera.codes" />
 							</Center>
-						</Stack>
+						</SimpleGrid>
 					</Center>
 					<Stack direction="row" justifyContent="space-between">
 						<Box />
