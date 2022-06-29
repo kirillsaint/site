@@ -90,9 +90,9 @@ function Projects() {
 			}
 
 			if (
-				message.toLowerCase() === "кирилл, отсоси мой хуй" ||
+				message.toLowerCase().includes("кирилл, отсоси мой хуй") ||
 				username.toLowerCase() === "@kirillsaint" ||
-				message.toLowerCase() === "кирилл отсоси мой хуй" ||
+				message.toLowerCase().includes("кирилл отсоси мой хуй") ||
 				username.toLowerCase() === "kirillsaint"
 			) {
 				setUsername("");
