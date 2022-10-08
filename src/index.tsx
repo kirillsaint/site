@@ -9,7 +9,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
 	<React.StrictMode>
-		<ConfigProvider>
+		<ConfigProvider appearance="dark">
 			<AdaptivityProvider>
 				<App />
 			</AdaptivityProvider>
