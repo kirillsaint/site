@@ -26,6 +26,7 @@ import Projects from "./pages/Projects";
 import Modals from "./modals";
 import Donate from "./pages/Donate";
 import { useLocation, useNavigate } from "react-router-dom";
+import NotFound from "./pages/NotFound";
 
 const App = withAdaptivity(
 	({ viewWidth }: { viewWidth: number }) => {
@@ -53,6 +54,10 @@ const App = withAdaptivity(
 				if (location.pathname === "/donate" && activeStory !== "donate") {
 					setActiveStory("donate");
 				}
+
+				if (location.pathname === "/404" && activeStory !== "notfound") {
+					setActiveStory("notfound");
+				}
 			} else {
 				if (activeStory === "main") {
 					navigate("/");
@@ -63,6 +68,10 @@ const App = withAdaptivity(
 
 				if (activeStory === "donate") {
 					navigate("/donate");
+				}
+
+				if (activeStory === "notfound") {
+					navigate("/404");
 				}
 			}
 
@@ -209,6 +218,11 @@ const App = withAdaptivity(
 						<View id="donate" activePanel="donate">
 							<Panel id="donate">
 								<Donate setPopout={setPopout} />
+							</Panel>
+						</View>
+						<View id="notfound" activePanel="notfound">
+							<Panel id="notfound">
+								<NotFound />
 							</Panel>
 						</View>
 					</Epic>

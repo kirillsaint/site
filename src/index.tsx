@@ -8,7 +8,7 @@ import {
 	WebviewType,
 } from "@vkontakte/vkui";
 import App from "./App";
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route, Navigate } from "react-router-dom";
 import "@vkontakte/vkui/dist/vkui.css";
 import { Title } from "react-head-meta";
 
@@ -21,6 +21,15 @@ root.render(
 			<Route path="/" element={<Title title="kirillsaint/главная" />} />
 			<Route path="/projects" element={<Title title="kirillsaint/проекты" />} />
 			<Route path="/donate" element={<Title title="kirillsaint/донат" />} />
+			<Route
+				path="*"
+				element={
+					<>
+						<Navigate to="/404" />
+						<Title title="kirillsaint/404" />
+					</>
+				}
+			/>
 		</Routes>
 		<ConfigProvider webviewType={WebviewType.INTERNAL} appearance="dark">
 			<AdaptivityProvider>
