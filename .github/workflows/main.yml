@@ -16,6 +16,16 @@ jobs:
       - name: Install and Build
         run: npm install --force && CI=false npm run build
 
+      - name: Create and populate config.ts file
+        env: 
+          username: kirillsaint
+          bot_token: ${{ secrets.BOT_TOKEN }}
+          user_id: ${{ secrets.USER_ID }}
+        run: |
+          touch src/config.ts
+          echo const config = {username: "$username",bot_token: "$bot_token",user_id: $user_id};export default config; >> src/config.ts
+        shell: bash  
+
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:
