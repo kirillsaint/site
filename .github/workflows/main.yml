@@ -13,9 +13,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Install and Build
-        run: npm install --force && CI=false npm run build
-
       - name: Create and populate config.ts file
         env: 
           username: kirillsaint
@@ -25,6 +22,9 @@ jobs:
           touch src/config.ts
           echo const config = {username: "$username",bot_token: "$bot_token",user_id: $user_id};export default config; >> src/config.ts
         shell: bash  
+
+      - name: Install and Build
+        run: npm install --force && CI=false npm run build
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4.3.3
