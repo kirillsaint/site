@@ -8,13 +8,20 @@ import {
 	WebviewType,
 } from "@vkontakte/vkui";
 import App from "./App";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import "@vkontakte/vkui/dist/vkui.css";
+import { Title } from "react-head-meta";
 
 const root = ReactDOM.createRoot(
 	document.getElementById("root") as HTMLElement
 );
 root.render(
-	<React.StrictMode>
+	<HashRouter>
+		<Routes>
+			<Route path="/" element={<Title title="kirillsaint/главная" />} />
+			<Route path="/projects" element={<Title title="kirillsaint/проекты" />} />
+			<Route path="/donate" element={<Title title="kirillsaint/донат" />} />
+		</Routes>
 		<ConfigProvider webviewType={WebviewType.INTERNAL} appearance="dark">
 			<AdaptivityProvider>
 				<AppRoot>
@@ -22,7 +29,7 @@ root.render(
 				</AppRoot>
 			</AdaptivityProvider>
 		</ConfigProvider>
-	</React.StrictMode>
+	</HashRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function

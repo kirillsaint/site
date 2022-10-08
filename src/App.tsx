@@ -14,6 +14,7 @@ import {
 	Tabbar,
 	TabbarItem,
 	View,
+	ScreenSpinner,
 } from "@vkontakte/vkui";
 import {
 	Icon28DonateOutline,
@@ -24,28 +25,63 @@ import Main from "./pages/Main";
 import Projects from "./pages/Projects";
 import Modals from "./modals";
 import Donate from "./pages/Donate";
-import { Title } from "react-head-meta";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const App = withAdaptivity(
 	({ viewWidth }: { viewWidth: number }) => {
 		const platform = usePlatform();
 		const [activeStory, setActiveStory] = React.useState<string>("main");
-		const [title, setTitle] = React.useState<string>("главная");
+		const [lastpath, setLastpath] = React.useState<string>("/");
+		const [laststory, setLaststory] = React.useState<string>("main");
+		const [isLoading, setIsLoading] = React.useState<boolean>(true);
+
 		const [activeModal, setActiveModal] = React.useState<string | null>(null);
 		const [popout, setPopout] = React.useState<ReactElement | null>(null);
+		const location = useLocation();
+		const navigate = useNavigate();
+
 		React.useEffect(() => {
-			let title: string = "главная";
-			if (activeStory === "projects") title = "проекты";
-			if (activeStory === "donate") title = "донат";
-			setTitle(title);
-		}, [activeStory]);
+			// да-да, это костыльный роутинг с вкюи =)
+			if (lastpath !== location.pathname) {
+				if (location.pathname === "/" && activeStory !== "main") {
+					setActiveStory("main");
+				}
+				if (location.pathname === "/projects" && activeStory !== "projects") {
+					setActiveStory("projects");
+				}
+
+				if (location.pathname === "/donate" && activeStory !== "donate") {
+					setActiveStory("donate");
+				}
+			} else {
+				if (activeStory === "main") {
+					navigate("/");
+				}
+				if (activeStory === "projects") {
+					navigate("/projects");
+				}
+
+				if (activeStory === "donate") {
+					navigate("/donate");
+				}
+			}
+
+			setLastpath(location.pathname);
+			setLaststory(activeStory);
+
+			setTimeout(() => {
+				setIsLoading(false);
+			}, 1000);
+		}, [location.pathname, activeStory, lastpath, laststory, navigate]);
 		const onStoryChange = (e: any) =>
 			setActiveStory(e.currentTarget.dataset.story);
 		const isDesktop = viewWidth >= ViewWidth.TABLET;
 		const hasHeader = platform !== VKCOM;
 		const isMobile = viewWidth <= ViewWidth.MOBILE;
 
-		return (
+		return isLoading ? (
+			<ScreenSpinner state="loading" />
+		) : (
 			<SplitLayout
 				header={hasHeader && <PanelHeader separator={false} />}
 				style={{ justifyContent: "center" }}
@@ -60,7 +96,6 @@ const App = withAdaptivity(
 				}
 				popout={popout}
 			>
-				<Title title={`kirillsaint/${title}`} />
 				{isDesktop && (
 					<SplitCol fixed width={280} maxWidth={280}>
 						<Panel>
