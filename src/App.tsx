@@ -23,6 +23,7 @@ import {
 import Main from "./pages/Main";
 import Projects from "./pages/Projects";
 import Modals from "./modals";
+import Donate from "./pages/Donate";
 
 const App = withAdaptivity(
 	({ viewWidth }: { viewWidth: number }) => {
@@ -162,7 +163,9 @@ const App = withAdaptivity(
 							</Panel>
 						</View>
 						<View id="donate" activePanel="donate">
-							<Panel id="donate"></Panel>
+							<Panel id="donate">
+								<Donate setPopout={setPopout} />
+							</Panel>
 						</View>
 					</Epic>
 				</SplitCol>
