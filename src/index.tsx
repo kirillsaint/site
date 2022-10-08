@@ -1,8 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import reportWebVitals from "./reportWebVitals";
-import { AdaptivityProvider, ConfigProvider } from "@vkontakte/vkui";
+import { AdaptivityProvider, ConfigProvider, AppRoot } from "@vkontakte/vkui";
 import App from "./App";
+import "@vkontakte/vkui/dist/vkui.css";
 
 const root = ReactDOM.createRoot(
 	document.getElementById("root") as HTMLElement
@@ -11,7 +12,9 @@ root.render(
 	<React.StrictMode>
 		<ConfigProvider appearance="dark">
 			<AdaptivityProvider>
-				<App />
+				<AppRoot>
+					<App />
+				</AppRoot>
 			</AdaptivityProvider>
 		</ConfigProvider>
 	</React.StrictMode>
