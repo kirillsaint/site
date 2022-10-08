@@ -25,7 +25,13 @@ function Contact(
 	platform: PlatformType,
 	setPopout: Dispatch<SetStateAction<ReactElement | null>>
 ) {
-	const onClose = () => setActiveModal(null);
+	const onClose = () => {
+		setActiveModal(null);
+		setUsername("");
+		setMessage("");
+		setErrorUsername(null);
+		setErrorMessage(null);
+	};
 
 	const [username, setUsername] = React.useState<string>("");
 	const [message, setMessage] = React.useState<string>("");
