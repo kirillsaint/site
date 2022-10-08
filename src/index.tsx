@@ -1,7 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import reportWebVitals from "./reportWebVitals";
-import { AdaptivityProvider, ConfigProvider, AppRoot } from "@vkontakte/vkui";
+import {
+	AdaptivityProvider,
+	ConfigProvider,
+	AppRoot,
+	WebviewType,
+} from "@vkontakte/vkui";
 import App from "./App";
 import "@vkontakte/vkui/dist/vkui.css";
 
@@ -10,7 +15,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
 	<React.StrictMode>
-		<ConfigProvider appearance="dark">
+		<ConfigProvider webviewType={WebviewType.INTERNAL} appearance="dark">
 			<AdaptivityProvider>
 				<AppRoot>
 					<App />

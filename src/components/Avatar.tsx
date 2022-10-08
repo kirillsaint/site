@@ -2,11 +2,11 @@ import React from "react";
 import { Avatar as VKAvatar } from "@vkontakte/vkui";
 import config from "../config";
 
-function Avatar() {
+function Avatar({ size }: { size?: number }) {
 	return (
 		<VKAvatar
 			src={`https://tx.me/i/userpic/320/${config.username}.jpg`}
-			size={36}
+			size={size || 36}
 		/>
 	);
 }

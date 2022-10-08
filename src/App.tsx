@@ -13,6 +13,7 @@ import {
 	Epic,
 	Tabbar,
 	TabbarItem,
+	View,
 } from "@vkontakte/vkui";
 import {
 	Icon28DonateOutline,
@@ -136,7 +137,17 @@ function App() {
 								)
 							}
 						>
-							{Main()}
+							<View id="main" activePanel="main">
+								<Panel id="main">
+									<Main platform={platform} />
+								</Panel>
+							</View>
+							<View id="projects" activePanel="projects">
+								<Panel id="projects"></Panel>
+							</View>
+							<View id="donate" activePanel="donate">
+								<Panel id="donate"></Panel>
+							</View>
 						</Epic>
 					</SplitCol>
 				</SplitLayout>
