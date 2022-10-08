@@ -1,25 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.0f56caeb.css",
-    "main.js": "/static/js/main.c15e4913.js",
-    "static/js/787.dc7104b2.chunk.js": "/static/js/787.dc7104b2.chunk.js",
-    "static/media/regular.otf": "/static/media/regular.9603d48be34f3721c9c6.otf",
-    "static/media/heading.otf": "/static/media/heading.e7dbff6869476c4643de.otf",
-    "static/media/sberzvuk.svg": "/static/media/sberzvuk.9b1057952f7291b3d346eac5438a52eb.svg",
-    "static/media/close.svg": "/static/media/close.b2700b0dddaf6ea0b030b70bef9c4823.svg",
-    "static/media/qiwi.svg": "/static/media/qiwi.cbcf44f139606486582c5dd999580c2d.svg",
-    "static/media/da.svg": "/static/media/da.c3bdcb1267ccbf717d25cda36fd32276.svg",
-    "static/media/tg.svg": "/static/media/tg.2b36ee1d6f19d49d1bd296d885a8ccd4.svg",
-    "static/media/gh.svg": "/static/media/gh.abc9e078d3453bef8dea9afcf914c963.svg",
+    "main.css": "/static/css/main.c3b713de.css",
+    "main.js": "/static/js/main.ac70b4b9.js",
+    "static/js/787.7edd3cc4.chunk.js": "/static/js/787.7edd3cc4.chunk.js",
+    "static/media/EitherLogo.png": "/static/media/EitherLogo.1574e6a8998a82c44c68.png",
+    "static/media/SBP.svg": "/static/media/SBP.5414485fbc2ba13e9490093dd5eb87af.svg",
+    "static/media/Qiwi.svg": "/static/media/Qiwi.c3480aa68e1736bf9c435c3c96aace1f.svg",
+    "static/media/Telegram.svg": "/static/media/Telegram.5ed3acb5f53c4709e940e4960268c6f5.svg",
+    "static/media/GitHub.svg": "/static/media/GitHub.73deb53d3de546fed8e79c1e62d13624.svg",
+    "static/media/YooMoney.svg": "/static/media/YooMoney.b6fd92639fef39d09dd09dfd48c7d1ac.svg",
     "index.html": "/index.html",
-    "static/media/vk.svg": "/static/media/vk.a7458f6331b4ad309a86594a8bbc0ba7.svg",
-    "static/media/yoomoney.svg": "/static/media/yoomoney.c2842d71f0ff86632dba69a8ca1b38a7.svg",
-    "main.0f56caeb.css.map": "/static/css/main.0f56caeb.css.map",
-    "main.c15e4913.js.map": "/static/js/main.c15e4913.js.map",
-    "787.dc7104b2.chunk.js.map": "/static/js/787.dc7104b2.chunk.js.map"
+    "static/media/VK.svg": "/static/media/VK.d6fd9fffc07a5c61e579896145953a7e.svg",
+    "main.c3b713de.css.map": "/static/css/main.c3b713de.css.map",
+    "main.ac70b4b9.js.map": "/static/js/main.ac70b4b9.js.map",
+    "787.7edd3cc4.chunk.js.map": "/static/js/787.7edd3cc4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0f56caeb.css",
-    "static/js/main.c15e4913.js"
+    "static/css/main.c3b713de.css",
+    "static/js/main.ac70b4b9.js"
   ]
 }
