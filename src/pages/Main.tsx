@@ -33,7 +33,7 @@ function Main({ platform }: { platform: PlatformType }) {
 						</Button>
 					}
 				>
-					Веб-разработчик из Омска.
+					Веб-разработчик из Омска
 				</Placeholder>
 				<Header>Ссылки</Header>
 				<HorizontalScroll>
