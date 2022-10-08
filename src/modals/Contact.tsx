@@ -64,7 +64,18 @@ function Contact(
 	const onSubmit = async () => {
 		try {
 			setIsLoading(true);
+			let error: boolean = false;
 			if (errorUsername || errorMessage) return;
+			if (username.trim() === "") {
+				setErrorUsername("Это поле обязательное");
+				error = true;
+			}
+			if (message.trim() === "") {
+				setErrorMessage("Это поле обязательное");
+				error = true;
+			}
+
+			if (error) return;
 
 			const data = await SubmitContactData(username, message);
 
@@ -121,6 +132,7 @@ function Contact(
 				</ModalPageHeader>
 			}
 			onClose={onClose}
+			dynamicContentHeight
 		>
 			<FormLayout>
 				<FormItem
