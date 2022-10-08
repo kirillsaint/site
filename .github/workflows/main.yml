@@ -11,17 +11,7 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
-
-      - name: Create and populate config.ts file
-        env: 
-          username: kirillsaint
-          bot_token: ${{ secrets.BOT_TOKEN }}
-          user_id: ${{ secrets.USER_ID }}
-        run: |
-          touch src/config.ts
-          echo const config = {username: "$username",bot_token: "$bot_token",user_id: $user_id};export default config; >> src/config.ts
-        shell: bash  
+        uses: actions/checkout@v3  
 
       - name: Install and Build
         run: npm install --force && CI=false npm run build
