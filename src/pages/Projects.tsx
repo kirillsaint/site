@@ -9,6 +9,7 @@ import {
 import React, { Dispatch, SetStateAction } from "react";
 import EitherLogo from "../assets/icons/EitherLogo.png";
 import ExteraLogo from "../assets/icons/ExteraLogo.png";
+import SilentLogo from "../assets/icons/SilentClient.png";
 import { openLink } from "../helpers";
 
 function Projects({
@@ -63,6 +64,14 @@ function Projects({
 					onClick={() => openLink("https://t.me/ytdaun_bot")}
 				>
 					YT Downloader Bot
+				</SimpleCell>
+				<SimpleCell
+					subtitle="PVP-клиент для Minecraft с 30+ модами, FPS Boost, Optifine и косметикой"
+					after={<Icon24ChevronRight />}
+					before={<Avatar size={48} src={SilentLogo} />}
+					onClick={() => openLink("https://silentclient.net")}
+				>
+					Silent Client
 				</SimpleCell>
 			</Group>
 		</>
