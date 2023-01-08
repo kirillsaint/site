@@ -25,6 +25,15 @@ function Projects({
 					Предложить идею
 				</CellButton>
 				<SimpleCell
+					subtitle="PVP-клиент для Minecraft с 30+ модами, FPS Boost, Optifine и косметикой"
+					after={<Icon24ChevronRight />}
+					before={<Avatar size={48} src={SilentLogo} />}
+					onClick={() => openLink("https://silentclient.net")}
+				>
+					Silent Client
+				</SimpleCell>
+				<SimpleCell
+					indicator="sold"
 					subtitle="Музыкальный лейбл"
 					after={<Icon24ChevronRight />}
 					before={<Avatar size={48} src={EitherLogo} />}
@@ -64,14 +73,6 @@ function Projects({
 					onClick={() => openLink("https://t.me/ytdaun_bot")}
 				>
 					YT Downloader Bot
-				</SimpleCell>
-				<SimpleCell
-					subtitle="PVP-клиент для Minecraft с 30+ модами, FPS Boost, Optifine и косметикой"
-					after={<Icon24ChevronRight />}
-					before={<Avatar size={48} src={SilentLogo} />}
-					onClick={() => openLink("https://silentclient.net")}
-				>
-					Silent Client
 				</SimpleCell>
 			</Group>
 		</>
