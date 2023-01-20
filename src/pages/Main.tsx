@@ -41,7 +41,7 @@ function Main({ platform }: { platform: PlatformType }) {
 						<HorizontalCell
 							size="s"
 							header="Telegram"
-							onClick={() => openLink("https://t.me/nuwql")}
+							onClick={() => openLink("https://t.me/kirillsaint")}
 						>
 							<VKAvatar
 								size={platform === "ios" ? 64 : 56}
