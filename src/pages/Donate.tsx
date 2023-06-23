@@ -26,7 +26,7 @@ function Donate({
 					after={<Icon24ChevronRight />}
 					before={<Avatar size={48} src={QiwiIcon} />}
 					subtitle="Номер: 79061971281"
-					onClick={() => openLink("https://qiwi.com/p/79061971281")}
+					onClick={() => openLink("https://qiwi.com/p/79937291281")}
 				>
 					QIWI
 				</SimpleCell>
@@ -41,7 +41,7 @@ function Donate({
 				<SimpleCell
 					after={<Icon24ChevronRight />}
 					before={<Avatar size={48} src={SBPIcon} />}
-					subtitle="Номер: 79061971281"
+					subtitle="Номер: 79061971281, Банк: Тинькофф"
 					onClick={() => {
 						navigator.clipboard.writeText("79061971281");
 						setPopout(
